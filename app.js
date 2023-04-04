@@ -2,16 +2,17 @@
 when I was cleaning up my code*/
 
 //Player object is stored outside of the function so that scores can be used in future games
-let players = {}; // object to store player names and their previous attempts
-
+let players = {};
 /*I wrapped everything I've done so far into a functiion so that I can invoke it to begin the game
 and then invoke it again inside the game to run it again should the player choose*/
 
 function guessingGame() {
+  let name;
   //checks if your name exists in the player object before the prompt, in case this is not your fist time
   if (!players[name]) {
     name = prompt("Welcome to the Thunderdome user, please input your name!");
-    if (name === null) {
+    if (name == null) {
+      alert("Goodbye user");
       return;
     }
   }
@@ -20,6 +21,7 @@ function guessingGame() {
   while (name === "" || !isNaN(name)) {
     name = prompt("Please input a valid name.");
   }
+  console.log(name);
 
   let input = prompt("Guess a number between 1-20");
   let number = Number(input);
@@ -100,7 +102,7 @@ function guessingGame() {
   if (goAgain) {
     guessingGame();
   } else {
-    alert("That's what I thought, smell you later " + name + "!");
+    alert(`That's what I thought, smell you later ${name}!`);
   }
 }
 

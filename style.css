@@ -1,13 +1,25 @@
 .info {
-    width: 650px;
-    border-radius: 30px;
-    border: 10px solid seagreen;
-    background-color: saddlebrown;
-    padding: 5px;
-    font-weight: bolder;
-    color: whitesmoke
+  width: 650px;
+  border-radius: 30px;
+  border: 10px solid rgb(9, 156, 214);
+  background-color: rgb(65, 65, 65);
+  padding: 5px;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.74);
 }
 
 strong {
-    color: palegreen;
+  color: rgb(184, 18, 250);
+}
+
+body {
+  background-color: rgb(41, 40, 40);
+}
+
+h1 {
+  color: rgba(136, 14, 250, 0.767);
+}
+
+h2 {
+  color: rgba(136, 14, 250, 0.767);
 }
